@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalini | B.Tech CSE Student</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f7f8fc;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #eaf2ff;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .education {
+            text-align: center;
+        }
+
+        .contact {
+            text-align: center;
+            background: #111827;
+            color: white;
+        }
+
+        .contact a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0b1120;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Shalini</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>Hi, I'm <span>Shalini</span> 👋</h1>
+
+    <p>B.Tech Computer Science Engineering Student</p>
+
+    <p>Aspiring Software Developer | Problem Solver | Hackathon Enthusiast</p>
+
+    <div>
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am a B.Tech Computer Science Engineering student
+            interested in software development, programming,
+            problem solving and emerging technologies.
+            I enjoy building practical projects and participating
+            in hackathons to improve my technical skills.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills">
+        <div class="skill">C</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">SQL</div>
+        <div class="skill">DBMS</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>CampusHub</h3>
+            <p>
+                A College Management System designed to manage
+                students, teachers, courses and college information.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Blood Management System</h3>
+            <p>
+                A DBMS-based project for managing blood donors,
+                blood stock and hospital blood requests.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>COMPLYGEM-AI</h3>
+            <p>
+                An AI-powered platform for checking bid compliance
+                in GeM procurement using document analysis and
+                evidence-based verification.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education">
+        <h3>B.Tech – Computer Science Engineering</h3>
+        <p>India</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>Email: <a href="mailto:your-email@example.com">
+        your-email@example.com
+    </a></p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/shalinilokre08" target="_blank">
+            github.com/shalinilokre08
+        </a>
+    </p>
+
+    <p>
+        LinkedIn: Add your LinkedIn profile here
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Shalini. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
